@@ -4,8 +4,9 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
 
-
-ffmpeg_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),"ffmpeg","ffmpeg.exe")
+base_path = sys._MEIPASS
+rel_path = os.path.join("ffmpeg","ffmpeg.exe")
+ffmpeg_path = os.path.join(base_path,rel_path)
 
 
 def get_raw_videos(searchPath):
